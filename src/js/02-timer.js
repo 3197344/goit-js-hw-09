@@ -122,13 +122,9 @@ const timer = new Timer({ onTick: faceClock });
 
 refs.btnStart.addEventListener('click', onClickTimerStart);
 
-// Функция для кнопки СТАРТ
-
 function onClickTimerStart() {
-  timer.start();
+    timer.start();
 }
-
-// Функция для отрисовки оставшегося времени на странице
 
 function faceClock(value) {
 refs.daysSpan.innerHTML = value.days;
