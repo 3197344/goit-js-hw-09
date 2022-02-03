@@ -61,7 +61,7 @@ const options = {
 const fp = flatpickr(refs.inputClock, options);
 // console.log(fp);
 
-// Создаём таймер по видео Репеты
+// Создаём класс "таймер" по видео Репеты (Модуль 11. Занятие 21. Асинхронность: таймеры 19/10/20 время 2:10:05)
 class Timer {
     constructor({ onTick }) {
         this.intervalID = null;
