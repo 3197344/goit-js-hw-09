@@ -1,6 +1,6 @@
 const btnStart = document.querySelector('button[data-start]');
 const btnStop = document.querySelector('button[data-stop]');
-const promptDeley = 1000;
+
 let intervalID = null;
 // btnStart.addClassList (disabled)
 console.log(btnStart);
