@@ -15,8 +15,8 @@ function onSubmitClick(event){
   delayInput = Number(event.currentTarget.elements.delay.value);
   stepInput = Number(event.currentTarget.elements.step.value);
   amountInput = Number(event.currentTarget.elements.amount.value);
-  btnSubmit.style.backgroundColor = "tomato";
-  btnSubmit.style.color = "white";
+  btnSubmit.style.backgroundColor = `${getRandomHexColor()}`;
+  
   console.log(delayInput);
   console.log(stepInput);
   console.log(amountInput);
@@ -53,3 +53,7 @@ function createPromise(position, delay) {
     });
 }
   
+
+function getRandomHexColor() {
+return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+}
